@@ -6,7 +6,7 @@ body {
 h1,
 h2 {
   font-family: Verdana;
-  color: red;
+  color: #0a3641;
 }
 
 nav li {
@@ -28,14 +28,14 @@ nav ul {
 }
 
 .active {
-  background-color: red;
+  background-color: #0a3641;
   color: white;
 }
 
 footer::before,
 footer::after {
   content: "/";
-  color: red;
+  color: #0a3641;
   font-size: 30px;
   font-weight: bold;
 }
