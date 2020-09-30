@@ -3,7 +3,8 @@ body {
   font-family: Verdana;
 }
 
-h1 {
+h1,
+h2 {
   font-family: Verdana;
   color: red;
 }
@@ -31,6 +32,7 @@ nav ul {
   color: white;
 }
 
-footer::before {
+footer::before,
+footer::after {
   content: "/";
 }
