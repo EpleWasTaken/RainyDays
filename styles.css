@@ -7,3 +7,7 @@ h1 {
   font-family: Verdana;
   color: red;
 }
+
+nav li {
+  display: inline-block;
+}
