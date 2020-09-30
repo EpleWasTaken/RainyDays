@@ -30,3 +30,7 @@ nav ul {
   background-color: red;
   color: white;
 }
+
+footer::before {
+  content: "/";
+}
