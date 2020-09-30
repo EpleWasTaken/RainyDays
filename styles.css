@@ -1,3 +1,9 @@
 body {
   background-color: blue;
+  font-family: Verdana;
+}
+
+h1 {
+  font-family: Verdana;
+  color: red;
 }
