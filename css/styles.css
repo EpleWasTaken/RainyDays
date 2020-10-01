@@ -1,11 +1,21 @@
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url(https://www.cssfontstack.com/Arial);
+}
+
 body {
-  background-image: url("images/RainyDays_Logo.png");
+  font-family: "Arial", sans-serif;
+  src: url();
 }
 
 h1,
-h2 {
-  font-family: Verdana;
-  color: #0a3641;
+h2,
+h3,
+p,
+a,
+footer {
+  font-family: "Arial", sans-serif;
+  color: #40baf9;
 }
 
 nav li {
@@ -33,7 +43,7 @@ nav ul {
 
 footer::before,
 footer::after {
-  content: "/";
+  content: " / ";
   color: #0a3641;
   font-size: 30px;
   font-weight: bold;
