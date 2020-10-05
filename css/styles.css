@@ -1,11 +1,10 @@
 @font-face {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial";
   src: url(https://www.cssfontstack.com/Arial);
 }
 
 body {
   font-family: "Arial", sans-serif;
-  src: url();
 }
 
 h1,
@@ -47,4 +46,8 @@ footer::after {
   color: #0a3641;
   font-size: 30px;
   font-weight: bold;
+}
+
+body {
+  background-color: black;
 }
