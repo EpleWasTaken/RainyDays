@@ -61,7 +61,6 @@ body {
 img {
   background-image: url(images/ManOnRock.jpg);
   background-repeat: no-repeat;
-  width: 2366px;
-  height: 1579px;
-  left: 421px;
+  width: 100%;
+  height: 100%;
 }
