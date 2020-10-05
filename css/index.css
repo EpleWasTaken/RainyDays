@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-img {
+div {
   background-image: url(images/ManOnCliff.jpg);
   background-repeat: no-repeat;
   width: 1920px;
