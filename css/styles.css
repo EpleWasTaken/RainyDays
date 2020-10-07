@@ -15,6 +15,7 @@ a,
 footer {
   font-family: "Arial", sans-serif;
   color: #40baf9;
+  text-align: center;
 }
 
 nav li {
@@ -25,14 +26,17 @@ nav a {
   color: black;
   text-decoration: none;
   padding: 10px;
+  text-align: center;
 }
 
 nav a:hover {
   text-decoration: underline;
+  text-align: center;
 }
 
 nav ul {
   padding: 0px;
+  text-align: center;
 }
 
 .active {
@@ -49,7 +53,7 @@ footer::after {
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 html,
@@ -65,7 +69,8 @@ img {
   height: 100%;
 }
 
-.logo img {
-  height: 50%;
-  width: 50%;
+.form__input {
+  display: block;
+  height: 400px;
+  width: 400px;
 }

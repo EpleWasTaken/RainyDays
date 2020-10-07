@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Contact Screen</title>
     <a href="index.html"
       ><img src="/images/RainyDays_Logo.png" alt="Website Logo"
     /></a>
@@ -27,6 +28,14 @@
         </ul>
       </nav>
     </header>
-    <footer>Copyright &copy;</footer>
+  </body>
+  <body>
+    <form action="form-success.php" method="POST">
+      <fieldset>
+        <legend>Send us a question</legend>
+        <label for="text"></label>
+        <input type="text" name="text" id="text" class="form__input" required />
+      </fieldset>
+    </form>
   </body>
 </html>
