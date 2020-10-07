@@ -5,6 +5,16 @@
 
 body {
   font-family: "Arial", sans-serif;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  max-width: 400px;
+  text-align: center;
 }
 
 h1,
@@ -23,7 +33,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: #40baf9;
   text-decoration: none;
   padding: 10px;
   text-align: center;
@@ -52,25 +62,6 @@ footer::after {
   font-weight: bold;
 }
 
-body {
-  background-color: white;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  background-image: url(images/ManOnRock.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
 .form__input {
   display: block;
-  height: 400px;
-  width: 400px;
 }
