@@ -1,11 +1,18 @@
+/* Media query for tablets and large phones*/
+
 @font-face {
-  font-family: "Arial";
-  src: url(https://www.cssfontstack.com/Arial);
+  font-family: "roboto";
+  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 1579px;
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  background-color: black;
+  background-image: url(../images/ManOnRock.jpg);
+  background-size: 1920px 1579px;
 }
 
 header {
@@ -56,10 +63,10 @@ nav ul {
 
 footer::before,
 footer::after {
-  content: " / ";
-  color: #0a3641;
+  content: "/";
   font-size: 30px;
   font-weight: bold;
+  color: #40baf9;
 }
 
 .form__input {
