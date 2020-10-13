@@ -72,3 +72,9 @@ footer::after {
 .form__input {
   display: block;
 }
+
+@media only screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
