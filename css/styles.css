@@ -13,6 +13,9 @@ html {
 body {
   background-image: url(../images/ManOnRock.jpg);
   background-size: 1920px 1579px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 header {
@@ -52,7 +55,6 @@ nav a:hover {
 }
 
 nav ul {
-  padding: 0px;
   text-align: center;
 }
 
