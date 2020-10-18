@@ -1,79 +1,58 @@
-/* Media query for tablets and large phones*/
-
-@font-face {
-  font-family: "roboto";
-  src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
   height: 1579px;
+  text-align: center;
 }
 
 body {
-  background-image: url(../images/ManOnRock.jpg);
-  background-size: 1920px 1579px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  font-family: "Roboto", sans-serif;
+  background: url(/images/ManOnRock.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100%;
 }
 
-header {
-  text-align: center;
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
 }
 
-.logo {
-  max-width: 400px;
-  text-align: center;
-}
-
-h1,
-h2,
-h3,
-p,
-a,
-footer {
-  font-family: "Arial", sans-serif;
-  color: #40baf9;
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
+.nav-link {
   color: #40baf9;
   text-decoration: none;
+}
+
+img {
+  max-width: 400px;
+}
+
+li {
+  display: inline-block;
   padding: 10px;
+}
+
+form {
   text-align: center;
+  display: grid;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  text-align: center;
+.allButFooter {
+  min-height: calc(100vh - 40px);
 }
 
-nav ul {
-  text-align: center;
-}
+/* query for tablets and phones */
 
-.active {
-  background-color: #0a3641;
-  color: #40baf9;
-}
+@media only screen and (max-width: 425px) {
+  img {
+    max-width: 200px;
+  }
 
-footer::before,
-footer::after {
-  content: "/";
-  font-size: 30px;
-  font-weight: bold;
-  color: #40baf9;
-}
-
-.form__input {
-  display: block;
-}
-
-@media only screen and (min-width: 600px) {
+  li {
+    max-width: 400px;
+    flex-direction: row;
+  }
 }

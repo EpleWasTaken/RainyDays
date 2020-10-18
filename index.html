@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-      <title>Home Screen</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link  rel="stylesheet" href="css/styles.css">
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+  </head>
   <body>
     <header>
-      <div>
-        <a href="index.html"><img src="/images/RainyDays_Logo.png" class="logo" alt="Website-Logo"></a>
+      <div class="logo-container">
+        <a href="index.html"><img src="./images/RainyDays_Logo.png" alt="logo"></a>
       </div>
       <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="man.html">Man</a></li>
-          <li><a href="woman.html">Woman</a></li>
-          <li><a href="unisex.html">Unisex</a></li>
-          <li><a href="cart.html">Cart</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="man.html">Man</a></li>
+          <li><a class="nav-link" href="woman.html">Woman</a></li>
+          <li><a class="nav-link" href="unisex.html">Unisex</a></li>
+          <li><a class="nav-link" href="cart.html">Cart</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
         </ul>
       </nav>
-      <p>
-        <h1>Welcome to RainyDays!</h1>
-    </p>  
     </header>
+
+    <main>
+      <section class="presentation">
+        <div class="allButFooter">
+            <h1>Welcome to RainyDays!</h1>
+        </div>
+      </section>
+    </main>
     <footer>
       Copyright &copy;
     </footer>
   </body>
 </html>
+
