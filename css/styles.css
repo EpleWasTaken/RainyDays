@@ -7,13 +7,26 @@
 html {
   height: 1579px;
   text-align: center;
+  background-image: url(/images/ManOnRock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  display: block;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url(/images/ManOnRock.jpg) no-repeat center center;
-  background-size: cover;
-  min-height: 100%;
+}
+
+main {
+  width: 100px;
+  height: 1321px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 60%;
+  align-items: center;
+  margin: auto;
 }
 
 .nav-links {
@@ -53,12 +66,12 @@ nav a:hover {
 
 /* query for tablets and phones */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   img {
     max-width: 200px;
   }
 
-  li {
+  ul {
     max-width: 400px;
     flex-direction: row;
   }
