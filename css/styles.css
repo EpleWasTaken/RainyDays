@@ -40,10 +40,6 @@ form {
   display: grid;
 }
 
-.allButFooter {
-  min-height: calc(100vh - 40px);
-}
-
 /* query for tablets and phones */
 
 @media only screen and (max-width: 425px) {
