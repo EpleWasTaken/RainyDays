@@ -17,11 +17,6 @@ body {
 }
 
 .nav-links {
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-link {
   color: #40baf9;
   text-decoration: none;
 }
@@ -38,6 +33,22 @@ li {
 form {
   text-align: center;
   display: grid;
+}
+
+.active {
+  background-color: #0a3641;
+}
+
+nav a {
+  color: #40baf9;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-align: center;
 }
 
 /* query for tablets and phones */
