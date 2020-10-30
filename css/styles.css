@@ -1,78 +1,210 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  height: 1579px;
-  text-align: center;
-  background-image: url(/images/ManOnRock.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
-main {
-  width: 100px;
-  height: 1321px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 60%;
-  align-items: center;
-  margin: auto;
+button {
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	display: flex;
+	width: 80%;
+	height: 25vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.search {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+
+.logo {
+	width: 300px;
+}
+
+nav {
+	display: flex;
+	flex: 4;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 }
 
 .nav-links {
-  color: #40baf9;
-  text-decoration: none;
+	justify-content: space-between;
+	list-style: none;
+	height: 30px;
+	align-items: center;
+	width: 600px;
 }
 
-img {
-  max-width: 400px;
+.nav-link {
+	display: flex;
+	color: #40baf9;
+	font-size: 20px;
+	text-decoration: none;
 }
 
-li {
-  display: inline-block;
-  padding: 10px;
+.search {
+	flex: 1;
+	justify-content: flex-end;
 }
 
-form {
-  text-align: center;
-  display: grid;
+.presentation {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
 }
 
-.active {
-  background-color: #0a3641;
+.introduction {
+	flex: 1;
 }
 
-nav a {
-  color: #40baf9;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
+.slogan-text {
+	font-size: 30px;
+	font-weight: 500;
+	background: linear-gradient(to right, #0a3641, #40baf9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  text-align: center;
+.slogan-text p {
+	margin: 5px;
+	font-size: 22px;
+	color: grey;
 }
 
-/* query for tablets and phones */
+.cta {
+	padding: 50px 50px 0px 0px;
+}
 
-@media only screen and (max-width: 600px) {
-  img {
-    max-width: 200px;
-  }
+.cta-col {
+	border: 2px solid #0a3641;
+	background: transparent;
+	color: #0a3641;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+}
 
-  ul {
-    max-width: 400px;
-    flex-direction: row;
-  }
+.cta-view {
+	background: #0a3641;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+
+.cover {
+	flex: 1;
+}
+
+.cover img {
+	height: 60vh;
+}
+
+/* SEARCHBAR */
+
+.search-box {
+	position: absolute;
+	top: 18%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	background: #40baf9;
+	height: 36px;
+	border-radius: 40px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+
+.search-box:hover > .search-txt {
+	width: 240px;
+	padding: 0 6px;
+}
+
+::placeholder {
+	color: black;
+}
+
+.search-btn {
+	color: #0a3641;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.search-btn i {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+
+	.slogan-text h1 {
+		font-size: 30px;
+	}
+
+	.slogan-text p {
+		font-size: 18px;
+	}
+
+	.cta {
+		padding: 10px 0px 20px 0px;
+	}
+
+	.logo {
+		width: 270px;
+	}
+
+	.search-box {
+		top: 18%;
+		left: 70%;
+		transform: none;
+		width: 240px;
+	}
+
+	.nav-links {
+		width: 400px;
+	}
 }
