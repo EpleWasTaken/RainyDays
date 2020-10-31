@@ -16,7 +16,6 @@ main {
 }
 
 h1 {
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
@@ -31,6 +30,8 @@ h1 {
 	gap: 4rem 2rem;
 	margin: 5%;
 	background: linear-gradient(to right, #0a3641, #40baf9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 section.contact-container {

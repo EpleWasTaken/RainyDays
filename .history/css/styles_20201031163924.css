@@ -207,12 +207,4 @@ nav {
 	.nav-links {
 		width: 400px;
 	}
-
-	nav {
-		display: none;
-	}
-
-	.search-box {
-		display: none;
-	}
 }

@@ -31,6 +31,8 @@ h1 {
 	gap: 4rem 2rem;
 	margin: 5%;
 	background: linear-gradient(to right, #0a3641, #40baf9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 section.contact-container {
@@ -67,9 +69,9 @@ fieldset.btn-submit {
 }
 
 section.other-contacts {
-	border-top-style: solid;
-	border-top-width: 70px;
-	color: white;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
