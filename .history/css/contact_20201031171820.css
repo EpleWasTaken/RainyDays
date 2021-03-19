@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+main {
+	padding-top: 50px;
+	margin-left: 5rem;
+	padding-right: 5rem;
+}
+
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	background: linear-gradient(to right, #0a3641, #40baf9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.contact-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4rem 2rem;
+	margin: 5%;
+	background: linear-gradient(to right, #0a3641, #40baf9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+section.contact-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	height: 100%;
+	padding: 30px;
+}
+
+section.contact-container .email,
+section.contact-container .subject {
+	font-size: 1rem;
+}
+
+section.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section .subject {
+}
+
+fieldset.message label {
+}
+
+fieldset {
+	width: 100%;
+}
+
+fieldset.btn-submit {
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	.contact-container {
+		grid-template-columns: 2fr 3fr;
+	}
+
+	section.contact-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
