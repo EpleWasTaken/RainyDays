@@ -49,13 +49,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.cover {
-  display: flex;
-  justify-content: center;
-}
-
 .yello {
   width: 375px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
