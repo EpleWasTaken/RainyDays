@@ -55,7 +55,7 @@ h1 {
 }
 
 .yello {
-  width: 100px;
+  width: auto;
 }
 
 @media screen and (min-width: 1024px) {
