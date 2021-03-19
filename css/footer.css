@@ -153,6 +153,11 @@ footer {
     align-items: center;
   }
 
+  .copyright {
+    display: flex;
+    text-align: center;
+  }
+
   main h1 {
     background: linear-gradient(to right, #0a3641, #40baf9);
     -webkit-background-clip: text;
