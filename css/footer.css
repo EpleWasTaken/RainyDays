@@ -82,14 +82,11 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   padding: 20px;
   font-size: 1.5rem;
-}
-
-.footer-social li {
-  margin-right: 1rem;
+  width: 300px;
 }
 
 .footer-social a {
@@ -145,12 +142,6 @@ footer {
   footer .footer-legal,
   footer .footer-social {
     display: unset;
-  }
-
-  footer .footer-copyright {
-    text-align: unset;
-    justify-content: center;
-    align-items: center;
   }
 
   .copyright {
