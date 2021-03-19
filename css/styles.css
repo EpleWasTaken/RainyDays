@@ -1,78 +1,64 @@
+:root {
+  --main-green: #0a3641;
+  --main-black: #000000;
+  --main-white: #ffff;
+}
+
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
-}
-
-html {
-  height: 1579px;
-  text-align: center;
-  background-image: url(/images/ManOnRock.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  display: block;
-}
-
-body {
+  padding: 0px;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  width: 100px;
-  height: 1321px;
+body {
+  background-color: var(--main-white);
+}
+
+.logo {
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 60%;
-  align-items: center;
+  max-width: 300px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 300px;
+}
+
+p {
+  text-align: center;
+  margin-top: 200px;
+  float: left;
+}
+
+.presentation {
+  display: flex;
+  width: 70%;
   margin: auto;
+  min-height: 80vh;
+  align-items: center;
 }
 
-.nav-links {
-  color: #40baf9;
-  text-decoration: none;
+.slogan-text {
+  font-size: 30px;
+  font-weight: 500;
+  background: linear-gradient(to right, #0a3641, #40baf9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-img {
-  max-width: 400px;
+.cta {
+  padding: 50px 50px 0px 0px;
 }
 
-li {
-  display: inline-block;
-  padding: 10px;
-}
-
-form {
-  text-align: center;
-  display: grid;
-}
-
-.active {
-  background-color: #0a3641;
-}
-
-nav a {
-  color: #40baf9;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  text-align: center;
-}
-
-/* query for tablets and phones */
-
-@media only screen and (max-width: 600px) {
-  img {
-    max-width: 200px;
-  }
-
-  ul {
-    max-width: 400px;
-    flex-direction: row;
-  }
+.yello {
+  max-width: 350px;
+  margin-left: 100px;
 }

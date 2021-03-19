@@ -1,59 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link 
-    rel="stylesheet" 
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="./css/styles.css"/>
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <a href="index.html"><img src="./images/RainyDays_Logo.png" alt="logo"></a>
+
+<head>
+  <title>Contact Page - RainyDays</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/form.css" />
+  <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+      <img src="./images/RainyDays_Logo.png"  class="logo" alt="logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="cart.html">Cart</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="man.html">Man</a></li>
+        <li><a class="nav-link" href="woman.html">Woman</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="contact-form">
+        <h2>Contact</h2>
+        <h3>Call us or use the contact form below to conatct us.</h3>
+    </div>
+    <div class="contactPhone">
+        <p>+12 345 67 890</p>
+        <a><a class="fas fa-phone"></a>
+    </div>
+
+    <div class="form-input">
+        <form id="contactForm">
+            
+            <div class="fullNameDiv">
+                <label>
+                    Full name
+                    <input type="text" id="fullName" placeholder=" Your full name..."/>
+                </label>
+                <div class="formError" id="fullNameError">Please enter a valid full name</div>
+            </div> 
+
+            <div>
+                <label>
+                    Subject
+                    <input type="text" id="subject" placeholder=" What is this regarding?..."/>
+                </label>
+                <div class="formError" id="subjectError">Subject must be at least 1 characters</div>
+            </div>
+            
+            <div>
+                <label>
+                    Email
+                    <input type="text" id="email" placeholder=" Example@outlook.com..."/>
+                </label>
+                <div class="formError" id="emailError">Please enter a valid email address</div>
+            </div>
+            
+            <div>
+                <label>
+                    Address
+                    <input type="text" id="address" placeholder=" Exampleroad 9 1258..."/>
+                </label>
+                <div class="formError" id="addressError">Address must include letters and numbers</div>
+            </div>
+            
+            <button type="submit">Submit form</button>
+
+        </form>
+    </div>
+</main>
+  <footer class="footer">
+    <div class="footer-container">
+      <ul class="footer-social">
+        <li>
+          <a href="#0" class="facebook"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#0" class="twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#0" class="youtube"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-container">
+      <div class="footer-legal">
+        <a href="#0">Legal</a>
+        <a href="#0">Privacy Policy</a>
+        <a href="#0">ToS</a>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="man.html">Man</a></li>
-          <li><a href="woman.html">Woman</a></li>
-          <li><a href="unisex.html">Unisex</a></li>
-          <li><a href="cart.html">Cart</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="presentation">
-        <div class="introduction">
-          <div class="intro-text">
-            <h1>Welcome to RainyDays!</h1>
-          </div>
-        </div>
-      </section>
-    </main>
-    <body>
-      <form action="form-success.php" method="POST">
-    <fieldset>
-      <legend>Need help?</legend>
-      <legend>Send us a question.</legend>
-      <label for="text"></label>
-      <textarea
-        type="text"
-        name="text"
-        id="text"
-        class="form__input"
-        required
-      ></textarea>
-      <input type="submit" value="Submit Text" />
-    </fieldset>
-  </form>
-    </body>
-    <footer>
-      Copyright &copy;
-    </footer>
-  </body>
+      <div class="footer-copyright">
+        &copy; Erlend Svanevik. All rights reserved. All trademarks and registerd trademarks are the propery of
+        their respective owners.
+      </div>
+  </footer>
+  <script src="form.js"></script>
+</body>
+
 </html>
