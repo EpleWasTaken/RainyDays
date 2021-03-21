@@ -40,6 +40,9 @@
       </ul>
     </nav>
   </header>
+
+<!--CONTENT-->
+
   <main>
     <div class="contact-form">
         <h2>Contact</h2>
@@ -55,7 +58,7 @@
             
             <div class="fullNameDiv">
                 <label>
-                    Full name
+                    Full name*
                     <input type="text" id="fullName" placeholder=" Your full name..."/>
                 </label>
                 <div class="formError" id="fullNameError">Please enter a valid full name</div>
@@ -63,7 +66,7 @@
 
             <div>
                 <label>
-                    Subject
+                    Subject*
                     <input type="text" id="subject" placeholder=" What is this regarding?..."/>
                 </label>
                 <div class="formError" id="subjectError">Subject must be at least 1 characters</div>
@@ -71,25 +74,20 @@
             
             <div>
                 <label>
-                    Email
+                    Email*
                     <input type="text" id="email" placeholder=" Example@outlook.com..."/>
                 </label>
                 <div class="formError" id="emailError">Please enter a valid email address</div>
             </div>
             
-            <div>
-                <label>
-                    Address
-                    <input type="text" id="address" placeholder=" Exampleroad 9 1258..."/>
-                </label>
-                <div class="formError" id="addressError">Address must include letters and numbers</div>
-            </div>
-            
-            <button type="submit">Submit form</button>
+            <button type="submit" id="submitF">Submit form</button>
 
         </form>
     </div>
 </main>
+
+
+
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-social">

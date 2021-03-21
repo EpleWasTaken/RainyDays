@@ -12,6 +12,8 @@ const emailError = document.querySelector("#emailError");
 const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
+const submit = document.getElementById("submitF");
+
 function validateForm(event) {
   event.preventDefault();
 
@@ -56,8 +58,10 @@ function validateEmail(email) {
   return patternTest;
 }
 
-function validateAddress(address) {
-  const addressEx = /[^A-Za-z0-9]+/;
-  const patternTest2 = addressEx.test(address);
-  return patternTest2;
+function validateForm(form) {
+  if (!valid) {
+    alert("Please correct the errors in the form.");
+  } else {
+    return confirm("Are you sure you want to submit form?");
+  }
 }

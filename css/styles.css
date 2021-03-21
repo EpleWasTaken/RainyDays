@@ -233,7 +233,7 @@ h1 {
     padding: 12px 38px;
   }
 
-  .man-box1 {
+  .box1 {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -241,7 +241,7 @@ h1 {
     margin: 0 auto;
   }
 
-  .man-title1 {
+  .title1 {
     display: flex;
     margin: auto;
     justify-content: center;
@@ -251,7 +251,7 @@ h1 {
     padding-bottom: 20px;
   }
 
-  .man-content {
+  .content {
     border-top: 2px solid var(--main-blue);
     border-bottom: 2px solid var(--main-blue);
     display: grid;
@@ -263,9 +263,9 @@ h1 {
     padding-bottom: 50px;
   }
 
-  .man-content1,
-  .man-content2,
-  .man-content3 {
+  .content1,
+  .content2,
+  .content3 {
     max-width: 200px;
     max-height: 400px;
     justify-content: center;
@@ -280,14 +280,14 @@ h1 {
     object-fit: cover;
   }
 
-  .man-jacket-name,
-  .man-jacket-price {
+  .jacket-name,
+  .jacket-price {
     text-decoration: none;
     font-size: 14px bold;
     border-top: 1px solid;
   }
 
-  .man-addToCart {
+  .addToCart {
     background: lightblue;
     color: var(--main-black);
     font-size: 20px;
@@ -295,9 +295,10 @@ h1 {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    border: 1px solid;
   }
 
-  .man-jacket-name {
+  . .man-jacket-name {
     display: block;
   }
 
