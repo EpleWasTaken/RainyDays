@@ -29,6 +29,15 @@ nav {
   display: none;
 }
 
+#backbutton {
+  list-style: none;
+  color: var(--main-blue);
+  background-color: var(--main-white);
+  text-decoration: none;
+  border: 2px solid var(--main-black);
+  padding-left: 20px;
+}
+
 main {
   padding-bottom: 30px;
 }
@@ -40,8 +49,8 @@ main {
 .slogan-title {
   display: flex;
   text-align: center;
-
   margin-top: 75px;
+  font-size: 20px;
 }
 
 .introduction {
@@ -59,6 +68,11 @@ main {
   align-self: center;
 }
 
+.front-cover {
+  padding-top: 30px;
+  margin: auto;
+  width: 100%;
+}
 .cover-img {
   width: 100%;
   display: flex;
@@ -211,6 +225,10 @@ main {
     width: 70%;
   }
 
+  #backbutton {
+    display: none;
+  }
+
   .hamburger {
     display: none;
   }
@@ -254,9 +272,6 @@ main {
     padding-top: 30px;
     margin: auto;
     width: 100%;
-  }
-
-  .slogan-text {
   }
 
   .slogan-title {
