@@ -58,10 +58,10 @@ function validateEmail(email) {
   return patternTest;
 }
 
-function validateForm(form) {
-  if (!valid) {
-    alert("Please correct the errors in the form.");
-  } else {
-    return confirm("Are you sure you want to submit form?");
-  }
-}
+// function validateForm(form) {
+//   if (!valid) {
+//     alert("Please correct the errors in the form.");
+//   } else {
+//     return confirm("Are you sure you want to submit form?");
+//   }
+// }
