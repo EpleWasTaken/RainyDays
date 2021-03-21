@@ -29,10 +29,18 @@ nav {
   display: none;
 }
 
-h1 {
+main {
+  padding-bottom: 30px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.slogan-title {
   display: flex;
   text-align: center;
-  max-width: 240px;
+
   margin-top: 75px;
 }
 
@@ -51,8 +59,8 @@ h1 {
   align-self: center;
 }
 
-.yello {
-  width: 375px;
+.cover-img {
+  width: 100%;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -94,6 +102,72 @@ h1 {
   padding: 12px 38px;
 }
 
+.box1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.title1 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content {
+  border-top: 2px solid var(--main-blue);
+  border-bottom: 2px solid var(--main-blue);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(202, 202, 202);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content1,
+.content2,
+.content3 {
+  max-width: 200px;
+  max-height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.clothes-image {
+  float: left;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.jacket-name,
+.jacket-price {
+  text-decoration: none;
+  font-size: 14px bold;
+  border-top: 1px solid;
+}
+
+.addToCart {
+  background: lightblue;
+  color: var(--main-black);
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-family: "Roboto", sans-serif;
@@ -115,6 +189,10 @@ h1 {
   main {
     min-height: 80vh;
     padding-bottom: 50px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 
   .logo-container,
@@ -142,10 +220,6 @@ h1 {
     color: white;
   }
 
-  .slogan-title {
-    max-width: 400px;
-  }
-
   .nav-links {
     justify-content: space-around;
     list-style: none;
@@ -167,10 +241,6 @@ h1 {
     border: 2px solid #0a3641;
   }
 
-  .search {
-    justify-content: flex-end;
-  }
-
   .presentation {
     display: flex;
     width: 70%;
@@ -180,29 +250,21 @@ h1 {
     padding-left: 200px;
   }
 
-  .introduction {
-    flex: 1;
+  .front-cover {
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
   }
 
   .slogan-text {
-    font-size: 30px;
-    font-weight: 500;
-    background: linear-gradient(to right, #0a3641, #40baf9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
-  .slogan-text p {
-    margin: 5px;
-    font-size: 22px;
-    color: grey;
-  }
-
-  .yello {
-    width: 375px;
+  .slogan-title {
     display: flex;
     justify-content: center;
-    margin: auto;
+    background: linear-gradient(to right, #254249, #40baf9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .cta {
@@ -296,17 +358,5 @@ h1 {
     text-align: center;
     cursor: pointer;
     border: 1px solid;
-  }
-
-  . .man-jacket-name {
-    display: block;
-  }
-
-  .man-content-price {
-    display: block;
-  }
-
-  .man-addToCart {
-    display: block;
   }
 }
