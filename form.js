@@ -57,7 +57,7 @@ function validateEmail(email) {
 }
 
 function validateAddress(address) {
-  const addressEx = /(\d+[a-z0-9]+[a-z](?<!km\b))(?:,|$)/i;
+  const addressEx = /[^A-Za-z0-9]+/;
   const patternTest = addressEx.test(address);
   return patternTest;
 }

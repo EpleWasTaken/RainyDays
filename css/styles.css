@@ -2,6 +2,7 @@
   --main-green: #0a3641;
   --main-black: #000000;
   --main-white: #ffff;
+  --main-blue: #40baf9;
 }
 
 * {
@@ -66,7 +67,7 @@ h1 {
   text-align: center;
   justify-content: center;
   padding-top: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .cta-man {
@@ -75,27 +76,32 @@ h1 {
   width: 187.5px;
   height: 50px;
   font-size: 20px;
+  text-transform: uppercase;
   list-style: none;
   text-decoration: none;
   text-align: center;
+  border: 2px solid;
+  padding: 12px 38px;
 }
 
 .cta-woman {
   background: pink;
-  color: white;
+  color: #0a3641;
   width: 187.5px;
   height: 50px;
   font-size: 20px;
-  border: none;
-  color: white;
+  text-transform: uppercase;
   list-style: none;
   text-decoration: none;
   text-align: center;
+  border: 2px solid;
+  padding: 12px 38px;
 }
 
 @media screen and (min-width: 1024px) {
   body {
     font-family: "Roboto", sans-serif;
+    height: 80vh;
   }
 
   button {
@@ -104,17 +110,18 @@ h1 {
 
   header {
     display: flex;
-    width: 80%;
-    height: 25vh;
+    width: 70%;
+    height: 15vh;
     margin: auto;
     align-items: center;
+    border-bottom: 1px solid var(--main-green);
   }
 
   .logo-container,
   .nav-links,
   .search {
     display: flex;
-    width: 80%;
+    width: 70%;
     justify-content: space-between;
   }
 
@@ -123,13 +130,15 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 70%;
   }
 
   .logo {
     width: 300px;
+    color: white;
   }
 
-  h1 {
+  .slogan-title {
     max-width: 400px;
   }
 
@@ -160,7 +169,7 @@ h1 {
 
   .presentation {
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
     min-height: 80vh;
     align-items: center;
@@ -202,25 +211,96 @@ h1 {
 
   .cta-man {
     background: lightblue;
-    color: #0a3641;
-    width: 187.5px;
-    height: 50px;
     font-size: 20px;
     list-style: none;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    padding: 12px 38px;
   }
 
   .cta-woman {
     background: pink;
-    color: white;
-    width: 187.5px;
-    height: 50px;
     font-size: 20px;
-    border: none;
-    color: white;
     list-style: none;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    padding: 12px 38px;
+  }
+
+  .man-box1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .man-title1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .man-content {
+    border-top: 2px solid var(--main-blue);
+    border-bottom: 2px solid var(--main-blue);
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(202, 202, 202);
+    padding-top: 50px;
+  }
+
+  .man-content1,
+  .man-content2,
+  .man-content3 {
+    max-width: 200px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .clothes-image {
+    float: left;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .man-jacket-name,
+  .man-jacket-price {
+    text-decoration: none;
+    font-size: 14px bold;
+    border-top: 1px solid;
+  }
+
+  .man-addToCart {
+    background: lightblue;
+    color: var(--main-black);
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .man-jacket-name {
+    display: block;
+  }
+
+  .man-content-price {
+    display: block;
+  }
+
+  .man-addToCart {
+    display: block;
   }
 }

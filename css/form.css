@@ -59,7 +59,7 @@ input[type="text"] {
 label {
   display: block;
   margin-top: 1rem;
-  color: var(--main-blac);
+  color: var(--main-black);
 }
 
 button {
@@ -71,6 +71,7 @@ button {
   margin-top: 20px;
   height: 50px;
   font-size: 1rem;
+  color: var(--main-white);
 }
 
 .form-input {
