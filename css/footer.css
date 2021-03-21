@@ -135,12 +135,12 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-with: 1024px) {
-  footer .footer-container {
+  .footer-container {
     padding: 1.5rem;
   }
 
-  footer .footer-legal,
-  footer .footer-social {
+  .footer-legal,
+  .footer-social {
     display: unset;
   }
 

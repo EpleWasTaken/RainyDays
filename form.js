@@ -58,6 +58,6 @@ function validateEmail(email) {
 
 function validateAddress(address) {
   const addressEx = /[^A-Za-z0-9]+/;
-  const patternTest = addressEx.test(address);
-  return patternTest;
+  const patternTest2 = addressEx.test(address);
+  return patternTest2;
 }

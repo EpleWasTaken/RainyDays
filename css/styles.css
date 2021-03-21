@@ -29,10 +29,6 @@ nav {
   display: none;
 }
 
-section {
-  min-height: 80vh;
-}
-
 h1 {
   display: flex;
   text-align: center;
@@ -101,7 +97,6 @@ h1 {
 @media screen and (min-width: 1024px) {
   body {
     font-family: "Roboto", sans-serif;
-    height: 80vh;
   }
 
   button {
@@ -115,6 +110,11 @@ h1 {
     margin: auto;
     align-items: center;
     border-bottom: 1px solid var(--main-green);
+  }
+
+  main {
+    min-height: 80vh;
+    padding-bottom: 50px;
   }
 
   .logo-container,
@@ -131,6 +131,10 @@ h1 {
     align-items: center;
     margin: auto;
     width: 70%;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .logo {
@@ -256,6 +260,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     background-color: rgb(202, 202, 202);
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .man-content1,
