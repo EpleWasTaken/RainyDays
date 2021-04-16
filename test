@@ -1,0 +1,41 @@
+const allProductURL = "http://rainydays.svanevik.one/wp-json/wc/store/products";
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFix = proxy + allProductURL;
+const resultAPI = document.querySelector(".clothes-APIcall");
+const loadingDiv = document.querySelector(".loader");
+const clothesSingleDetail = document.querySelector(".clothes-details");
+const clothesSingeFetch = document.querySelector(".clothes-detailsResult");
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+
+
+async function getJSON() {
+  const result = await fetch(corsFix);
+
+  const json = await result.json();
+
+  loadingDiv.innerHTML = "";
+
+  const wordpress = json;
+
+  for (let i = 0; i < wordpress.length; i++) {
+    console.log(wordpress[i]);
+
+    resultAPI.innerHTML += `<div>${wordpress[i].name}`;
+  }
+}
+
+getJSON();
+
+const clothesSingleDetail = document.querySelector(".clothes-details");
+
+const clothesSingeFetch = document.querySelector(".clothes-detailsResult");
+
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const id = params.get("id");
+
+console.log(id);
