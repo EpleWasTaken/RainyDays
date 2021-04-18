@@ -1,4 +1,4 @@
-const singleMenClothing = document.querySelector(".menContainer");
+const singleClothing = document.querySelector(".singleProductDetails");
 
 const queryString = document.location.search;
 
@@ -32,11 +32,13 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHTML(product) {
-  singleMenClothing.innerHTML = `<div class="selectedProducts">
+  singleClothing.innerHTML = `<section class="selectedProduct">
                                 <img src="${product.images[0].thumbnail}">
-                                <h2 class="product_name">${product.name}</h2>
-                                <h3 class="product_price">${product.prices.price} ${product.prices.currency_code}</h3>
-                                <h4 class="product_button">Buy now</h4>`;
+                                <h1 class="singleProduct_name">${product.name}</h2>
+                                <h2 class="singleProduct_price">${product.prices.price} ${product.prices.currency_code}</h3>
+                                <h3 class="singleProduct_info">${product.short_description}</h3>
+                                <h4 class="singleProduct_button">Buy now</h4>
+                                </section`;
 }
 
 

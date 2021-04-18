@@ -10,7 +10,7 @@ async function fetchMenProduct() {
         menContainer.innerHTML = "";
 
         jsonMen.forEach(function (men) {
-            menContainer.innerHTML += ` <div class="productCard">
+            menContainer.innerHTML += ` <div class="product_card">
                                         <a href="productDetails.html?id=${men.id}">
                                         <img src="${men.images[0].thumbnail}"></a>                            
                                         <h2 class="product_name">${men.name}</h2>
@@ -36,7 +36,7 @@ async function fetchWomanProduct() {
         womanContainer.innerHTML = "";
 
         jsonWoman.forEach(function (woman) {
-            womanContainer.innerHTML += `<div class="productCard">
+            womanContainer.innerHTML += `<div class="product_card">
                                          <a href="productDetails.html?id=${woman.id}">
                                          <img src="${woman.images[0].thumbnail}"></a>                            
                                          <h2 class="product_name">${woman.name}</h2>
