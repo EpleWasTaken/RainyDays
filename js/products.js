@@ -1,6 +1,6 @@
 const menContainer = document.querySelector(".menResultsContainer");
 
-const urlMen = "http://rainydays.svanevik.one/wp-json/wc/store/products?category=16";
+const urlMen = "https://rainydays.svanevik.one/wp-json/wc/store/products?category=16";
 
 async function fetchMenProduct() {
     try {
@@ -26,7 +26,7 @@ fetchMenProduct();
 
 const womanContainer = document.querySelector(".womanResultsContainer");
 
-const urlWoman = "http://rainydays.svanevik.one/wp-json/wc/store/products?category=17";
+const urlWoman = "https://rainydays.svanevik.one/wp-json/wc/store/products?category=17";
 
 async function fetchWomanProduct() {
     try {
