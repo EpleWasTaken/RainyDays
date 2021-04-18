@@ -10,14 +10,14 @@ async function fetchMenProduct() {
         menContainer.innerHTML = "";
 
         jsonMen.forEach(function (men) {
-            menContainer.innerHTML += ` <div class="product_card">
+            menContainer.innerHTML += ` <section class="product_card">
                                         <a href="productDetails.html?id=${men.id}">
                                         <img src="${men.images[0].thumbnail}" class="product_image"></a>                            
                                         <h2 class="product_name">${men.name}</h2>
                                         <h3 class="product_price">${men.prices.price} ${men.prices.currency_code}</h3>
                                         <div class="button_container">
                                         <a href="productDetails.html?id=${men.id}" class="product_button">View product</a>
-                                        </div>`;
+                                        </section>`;
         })
     } catch (error) {
         console.log("Something went wrong");
@@ -38,12 +38,13 @@ async function fetchWomanProduct() {
         womanContainer.innerHTML = "";
 
         jsonWoman.forEach(function (woman) {
-            womanContainer.innerHTML += `<div class="product_card">
+            womanContainer.innerHTML += `<section class="product_card">
                                          <a href="productDetails.html?id=${woman.id}">
                                          <img src="${woman.images[0].thumbnail}" class="product_image"></a>                            
                                          <h2 class="product_name">${woman.name}</h2>
                                          <h3 class="product_price">${woman.prices.price} ${woman.prices.currency_code}</h3>
-                                         <a href="productDetails.html?id=${woman.id}" class="product_button">View product</a>`;
+                                         <a href="productDetails.html?id=${woman.id}" class="product_button">View product</a>
+                                         </section>`;
         })
     } catch (error) {
         console.log("Something went wrong");

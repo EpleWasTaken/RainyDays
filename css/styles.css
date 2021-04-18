@@ -96,12 +96,11 @@
     padding: 12px 38px;
 }
 
-/*------------MENS------------*/
-
 .page_header {
     margin: 0 auto;
     text-align: center;
-    display: flex;
+    display: none;
+    /* display: flex; */
     font-size: 40px;
     font-weight: 500;
     background: linear-gradient(to right, #0a3641, #40baf9);
@@ -111,6 +110,8 @@
     align-self: center;
     margin-bottom: 20px;
 }
+
+/*------------MENS/WOMENS------------*/
 
 .productsBox {
     height: 1400px;
@@ -124,7 +125,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .product_card {
@@ -152,8 +153,6 @@
     font-weight: 600;
     border-radius: 6px;
     text-align: center;
-    margin-top: 5px;
-    cursor: pointer;
     padding-left: 75px;
     padding-right: 81px;
     list-style: none;
@@ -164,11 +163,94 @@
     
 }
 
-.product_button a {
-    max-width: 300px;
-}
-
 .product_image {
     display: block;
     border-radius: 6px;
+}
+
+/*------------SPECIFIC PRODUCT MENS/WOMENS------------*/
+
+.productsBox2 {
+    height: 750px;
+    margin: 0 auto;
+}
+
+.singleProductDetails {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.singleProduct_card {
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--main-grey);
+    box-shadow: 0 0 1px #000000, 0 0 1px #000000;
+    margin-top: 50px;
+}
+
+.singleProduct_image {
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.singleProduct_name {
+    text-align: center;
+    max-width: 300px;
+}
+
+.singleProduct_price {
+    text-align: center;
+    max-width: 300px;
+}
+
+.singleProduct_info {
+    text-align: center;
+}
+
+.button_container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.singleProduct_button {
+    margin-top: 20px;
+    color: var(--main-black);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 81px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--main-blue);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+}
+
+.loader {
+    top: 50%;
+    left: 42%;
+    margin: 0 auto;
+    border: 8px solid var(--main-blue);
+    border-top: 8px solid var(--main-black);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
