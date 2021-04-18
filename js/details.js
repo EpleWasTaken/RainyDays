@@ -10,15 +10,11 @@ console.log(id)
 
 const url = "https://rainydays.svanevik.one/wp-json/wc/store/products/" + id;
 
-console.log(url);
-
 
 async function fetchProducts() {
   try {
     const productResponse = await fetch(url);
     const productJson = await productResponse.json();
-
-    console.log(productJson);
 
     createHTML(productJson);
 
@@ -32,7 +28,7 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHTML(product) {
-  singleClothing.innerHTML = `<section class="selectedProduct">
+  singleClothing.innerHTML = `<section class="singleProduct_box">
                                 <img src="${product.images[0].thumbnail}" class="singleProduct_image">
                                 <h1 class="singleProduct_name">${product.name}</h2>
                                 <h2 class="singleProduct_price">${product.prices.price} ${product.prices.currency_code}</h3>
