@@ -37,12 +37,12 @@ nav {
   background-color: var(--main-white);
   text-decoration: none;
   border: 2px solid var(--main-black);
-  margin-left: 10px;
   padding-left: 7px;
   padding-right: 7px;
   padding-top: 5px;
   padding-bottom: 5px;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 main {
@@ -131,7 +131,7 @@ main {
 }
 
 .resultsDiv {
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .selectedProducts {
@@ -142,13 +142,13 @@ main {
 }
 
 .product_name {
-  max-width: 600px;
+  max-width: 300px;
   margin: auto;
   text-align: center;
 }
 
 .product_price {
-  max-width: 600px;
+  max-width: 300px;
   margin: auto;
   text-align: center;
 }
@@ -172,17 +172,25 @@ main {
 }
 
 .product_card {
-  margin: auto;
   margin-bottom: 20px;  
   margin-top:40px;
   border: 2px solid var(--main-black);
   padding: 20px;
   background-color: var(--main-grey);
+  margin: 0 auto;
 }
 
-.singleContainer img {
-margin: auto;
+.page_header {
+  margin: 0 auto;
+  text-align: center;
 }
+
+.product_image {
+  max-width: 300px;
+  margin: auto;
+
+}
+
 
 .loader {
   top: 50%;

@@ -33,7 +33,7 @@ fetchProducts();
 
 function createHTML(product) {
   singleClothing.innerHTML = `<section class="selectedProduct">
-                                <img src="${product.images[0].thumbnail}">
+                                <img src="${product.images[0].thumbnail}" class="singleProduct_image">
                                 <h1 class="singleProduct_name">${product.name}</h2>
                                 <h2 class="singleProduct_price">${product.prices.price} ${product.prices.currency_code}</h3>
                                 <h3 class="singleProduct_info">${product.short_description}</h3>
