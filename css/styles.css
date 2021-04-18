@@ -127,7 +127,10 @@ main {
 .menResultsContainer, .womanResultsContainer {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  margin: 0 auto;
+}
+
+.resultsDiv {
   margin: 0 auto;
 }
 
@@ -178,7 +181,6 @@ main {
 }
 
 .singleContainer img {
-max-width: 400px;
 margin: auto;
 }
 
@@ -206,13 +208,8 @@ margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  html {
-    background: #521CB1;
-  }
-
   body {
     font-family: "Roboto", sans-serif;
-    background: #521CB1;
   }
 
   button {
@@ -370,11 +367,6 @@ margin: auto;
   }
 
 
-
-  .product_card img {
-    width: auto;
-    grid-area: header;
-  }
 
   .resultsDiv,
   .singleProductDetails {
