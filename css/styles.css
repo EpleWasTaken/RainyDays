@@ -19,69 +19,48 @@ main {
 
 /*-------------NAVIGATION/HAMBURGER-------------*/
 
-nav {
+header {
+  margin: 10px;
+  text-align: center;
   height: 100%;
 }
 
 .nav-links {
-  display: flex;
-  position: fixed;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
   list-style: none;
-  height: 100vh;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-  background: var(--main-green);
-  flex-direction: column;
-  clip-path: circle(100px at 2% -35%);
-  -webkit-clip-path: circle(100px at 2% -35%);
-  transition: all 1.5s ease-out;
+  text-transform: uppercase;
+  margin-top: 20px;
+  max-width: 800px;
+  border: 2px solid var(--main-green);
+  padding: 20px;
+  background-color: var(--main-grey);
 }
 
-.nav-links li a {
-  color: var(--main-white);
-  text-decoration: none;
+.nav-link {
   font-size: 20px;
-}
-
-.hamburger_menu {
-  position: absolute;
-  cursor: pointer;
+  text-decoration: none;
+  color: var(--main-blue);
+  border: 1px solid transparent;
   padding: 10px;
-  z-index: 1;
 }
 
-.hamburger_menu.open {
-  position: fixed;
-  z-index: 3;
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: var(--main-green);
+  color: var(--main-blue);
+  border: 1px solid var(--main-green);
 }
 
 .logo {
-  display: block;
-  margin: 0 auto;
-  height: 100%;
-  width: 250px;
+  display: inline-block;
+  text-align: center;
+  max-width: 250px;
   padding-top: 10px;
-}
-
-.line {
-  width: 35px;
-  height: 4px;
-  background: var(--main-black);
-  margin: 7px;
-}
-
-.nav-links li a {
-  font-size: 40px;
-  text-transform: uppercase;
-  z-index: 1;      
-}
-
-.nav-links.open {
-  clip-path: circle(1800px at 2% -35%);
-  -webkit-clip-path: circle(1800px at 2% -35%);
-  z-index: 2;
 }
 
 
@@ -213,7 +192,6 @@ nav {
     text-transform: uppercase;
     background-color: var(--main-blue);
     box-shadow: 0.5px 0.5px 0.5px 0.5px black;
-    
 }
 
 .product_image {
@@ -292,10 +270,128 @@ nav {
     box-shadow: 0.5px 0.5px 0.5px 0.5px black;
 }
 
+/* ------------ABOUT PAGE---------------------- */
+  
+.aboutBox {
+  background: var(--main-grey);
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 6px;
+  height: 100%;    
+}
+
+.aboutUsHeading {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;    
+}
+
+.aboutUsText {
+  font-size: 16px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;    
+}
+
+.aboutUsTextImg {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  display: block;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;    
+}
+
+.aboutUsTextImg2 {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  display: block;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  object-fit: cover;
+} 
+
+/*--------------CART-------------*/
+
+.cart_h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: var(--main-green)
+}
+
+.cart_container {
+  border: 2px solid var(--main-green);
+  background-color: var(--main-grey);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart_card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_card_h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cart_product {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}
+
+.cart_p_name {
+ text-transform: uppercase;
+ margin: 5px;
+ font-size: 24px;
+}
+
+.cart_p_description {
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: 16px;
+  max-width: 250px;
+}
+
+.cart_p_price {
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#cart_purchase {
+  width: 250px;
+  background-color: var(--main-white);
+  text-transform: uppercase;
+  height: 40px;
+  border: 3px solid var(--main-green);
+  max-width: 250px;
+  font-size: 20px;
+  color: var(--main-black)
+}
 
 .loader {
     top: 50%;
-    left: 42%;
+    left: 49%;
     margin: 0 auto;
     border: 8px solid var(--main-blue);
     border-top: 8px solid var(--main-black);
@@ -317,62 +413,36 @@ nav {
     }
 }
 
+@media screen and (min-width:768px) {
+  .nav-links {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   
-  header {
-    display: flex;
-    height: 15vh;
-  }
 
-  /*-------------NAVIGATION/HAMBURGER-------------*/
-
-  main {
-    margin: 20px;
-  }
+  /*-------------NAVIGATION-------------*/
 
   nav {
-    display: flex;
     width: 100%;
+    height: 100%;
   }
 
   .nav-links {
     display: flex;
-    border: 1px solid red;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-  }
-  
-  .nav-links li a {
-    display: flex;
-    border: 1px solid red;
-    color: red;
-  }
-  
-  .hamburger_menu.open,
-  .line,
-  .hamburger_menu,
-  .nav-links.open {
-    display: none;
-  }
-  
   #backbutton {
     display: none;
   }
 
-  .hamburger {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-    color: #40baf9;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px
-  }
-
-  .nav-link:hover {
-    background-color: #40baf9;
-    color: var(--main-black);
+  .logo {
+    display: inline-block;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
   .image_container {
@@ -394,69 +464,62 @@ nav {
     font-size: 40px;
   }
 
-  .logo {
-    display: block;
-    margin-left: 20px;
-  }
-
   .cta, .cta-woman, .cta-man {
     display: none
   }
-  .productsMenContainer,
-  .productsWomenContainer {
-    display: grid;
-    grid-template: 50% 50%;
-    width: 90%;
-    margin: 0 auto;
+
+  .productsBox {
     height: 100%;
   }
 
-  .menResultsContainer, .womanResultsContainer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    margin: auto;
-    justify-content:space-between;
+  .productsMenContainer,
+  .productsWomenContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 400px;
+  }
+
+  .product_card {
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: var(--main-grey);
+    box-shadow: 0 0 1px #000000, 0 0 1px #000000;
   }
 
   .product_name {
-    max-width: 300px;
-    margin: auto;
     text-align: center;
+    max-width: 300px;
   }
 
   .product_price {
-    max-width: 300px;
-    margin: auto;
     text-align: center;
+    max-width: 300px;
   }
 
-  .product_button {
+   .product_button {
     color: var(--main-black);
-    background-color: var(--main-blue);
-    max-width: 400px;
-    margin: auto;
-    border: 2px solid var(--main-black);
-    text-align: center;
     font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 81px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--main-blue);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
   }
 
   .product_info {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
-  .product_card {
-    margin: auto;
-    margin-bottom: 20px;  
-    margin-top:40px;
-    border: 2px solid var(--main-black);
-    padding: 20px;
-    background-color: var(--main-grey);
-  }
-
 
   .selectedProduct {
     margin: auto;  
@@ -469,6 +532,7 @@ nav {
     height: 1600px;
     margin: 0 auto;
   }
+
   .singleProductDetails {
     display: flex;
     flex-direction: column;
@@ -489,6 +553,7 @@ nav {
     width: 70%;
     margin: 0 auto;
   }
+
   .singleProduct_image {
     display: block;
     border-radius: 6px;
@@ -535,10 +600,132 @@ nav {
   
   .aboutBox {
     background: var(--main-grey);
-    width: 500px;
+    width: 800px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 6px;
-    height: 600px;
+    height: 100%;
     }
+
+    .aboutUsHeading {
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .aboutUsText {
+      font-size: 16px;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .aboutUsTextImg {
+      width: 400px;
+      height: 350px;
+      display: block;
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .aboutUsTextImg2 {
+      width: 400px;
+      height: 350px;
+      display: block;
+      border-radius: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      object-fit: cover;
+    }
+
+    /*--------------CART-------------*/
+
+  .cart_h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--main-green)
   }
+  
+  .cart_card {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart_card_h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .cart_product {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+  }
+  
+  .cart_p_name {
+   text-transform: uppercase;
+   margin: 5px;
+   font-size: 24px;
+  }
+  
+  .cart_p_description {
+    text-transform: uppercase;
+    margin: 5px;
+    font-size: 16px;
+    max-width: 250px;
+  }
+  
+  .cart_p_price {
+    text-transform: uppercase;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  #cart_purchase {
+    width: 250px;
+    background-color: var(--main-white);
+    text-transform: uppercase;
+    height: 40px;
+    border: 3px solid var(--main-green);
+    max-width: 250px;
+    font-size: 20px;
+    color: var(--main-black)
+  }
+
+    .loader {
+      top: 50%;
+      left: 49%;
+      margin: 0 auto;
+      border: 8px solid var(--main-blue);
+      border-top: 8px solid var(--main-black);
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+}
