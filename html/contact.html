@@ -14,21 +14,25 @@
 
 <body>
   <header>
-    <div class="logo-container">
-      <a href="../index.html">
-      <img src="/images/RainyDays_Logo.png"  class="logo" alt="logo">
-    </div>
     <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="../index.html">Home</a></li>
-        <li><a class="nav-link" href="cart.html">Cart</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="man.html">Man</a></li>
-        <li><a class="nav-link" href="woman.html">Woman</a></li>
-      </ul>
+        <div class="hamburger_menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html" aria-hidden="true" aria_label="Home button, will take you to the homepage.">Home</a></li>
+            <li><a href="/html/cart.html"  aria-hidden="true" aria_label="Cart button, will take you to your cart.">Cart</a></li>
+            <li><a href="/html/contact.html" aria-hidden="true" aria_label="Contact button, will take you to the contact page.">Contact</a></li>
+            <li><a href="/html/about.html" aria-hidden="true" aria_label="About button, will take you to the about page.">About</a></li>
+            <li><a href="/html/man.html" aria-hidden="true" aria_label="Mens button, will take you to the mens store.">Man</a></li>
+            <li><a href="/html/woman.html" aria-hidden="true" aria_label="Womens button, will take you to the womens store">Woman</a></li>
+        </ul>
+            <a href="../index.html">
+            <img src="/images/RainyDays_Logo.png" class="logo" alt="logo" aria_label="RainyDays logo, pushing the comfort zone.">
+          </a>
     </nav>
-  </header>
+</header>
 
 <!--CONTENT-->
 
@@ -103,6 +107,7 @@
       </div>
   </footer>
   <script src="/js/form.js"></script>
+  <script src="/js/hamburger.js"></script>
 </body>
 
 </html>

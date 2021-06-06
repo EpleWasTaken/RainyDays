@@ -10,6 +10,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .footer-social {
@@ -46,14 +47,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
 }
 
 .footer-legal a {
-  color: grey;
+  color: white;
   text-decoration: none;
   margin-right: 1rem;
-  font-size: 14px;
+  font-size: 16px;
   padding: 20px;
 }
 
@@ -163,9 +163,5 @@ footer {
   }
   footer .footer_container {
     flex-direction: row;
-  }
-
-  footer .footer_container.flex {
-    display: unset;
   }
 }

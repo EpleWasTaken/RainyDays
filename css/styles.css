@@ -1,34 +1,91 @@
 :root {
-    --main-green: #0a3641;
-    --main-black: #000000;
-    --main-white: #ffff;
-    --main-blue: #40baf9;
-    --main-grey: #dbdbdb;
+  --main-green: #0a3641;
+  --main-black: #000000;
+  --main-white: #ffff;
+  --main-blue: #40baf9;
+  --main-grey: #dbdbdb;
   }
 
-  * {
-      box-sizing: border-box;
-      padding: 0px;
-      margin: 0px;
-      font-family: "Roboto", sans-serif;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
 
-/*------------INDEX PAGE------------*/
+main {
+  margin: 10px;
+}
+
+/*-------------NAVIGATION/HAMBURGER-------------*/
+
+nav {
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  position: fixed;
+  list-style: none;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  background: var(--main-green);
+  flex-direction: column;
+  clip-path: circle(100px at 2% -35%);
+  -webkit-clip-path: circle(100px at 2% -35%);
+  transition: all 1.5s ease-out;
+}
+
+.nav-links li a {
+  color: var(--main-white);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hamburger_menu {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.hamburger_menu.open {
+  position: fixed;
+  z-index: 3;
+}
 
 .logo {
-    display: flex;
-    width: 200px;
-    margin: 0 auto;
-    padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 250px;
+  padding-top: 10px;
 }
 
-.hamburger {
-    float: left;
-    text-overflow-scrolling: touch;
-    margin-left: 10px;
-    display: block;
-    font-size: 30px
+.line {
+  width: 35px;
+  height: 4px;
+  background: var(--main-black);
+  margin: 7px;
 }
+
+.nav-links li a {
+  font-size: 40px;
+  text-transform: uppercase;
+  z-index: 1;      
+}
+
+.nav-links.open {
+  clip-path: circle(1800px at 2% -35%);
+  -webkit-clip-path: circle(1800px at 2% -35%);
+  z-index: 2;
+}
+
+
+/*------------INDEX PAGE------------*/
 
 #backbutton  {
     list-style: none;
@@ -41,19 +98,18 @@
     margin-left: 10px;
 }
 
-.nav-links {
-    display: none;
-}
-
 .slogan_text {
     position: relative;
-    bottom: -30px;
+    bottom: -50px;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background: linear-gradient(to right, #0a3641, #40baf9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 25px;
 }
 
 .front_img {
@@ -71,7 +127,7 @@
 .cta-man {
     background: lightblue;
     color: rgb(10, 54, 65);
-    width: 187.5px;
+    width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: 600;
@@ -85,7 +141,7 @@
 .cta-woman {
     background: pink;
     color: rgb(10, 54, 65);
-    width: 187.5px;
+    width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: 600;
@@ -262,229 +318,227 @@
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        font-family: "Roboto", sans-serif;
-        margin: auto;
-      }
-    
-      button {
-        font-family: "Roboto", sans-serif;
-      }
-    
-      header {
-        display: flex;
-        height: 15vh;
-        margin: auto;
-        align-items: center;
-      }
-    
-      .logo-container,
-      .nav-links,
-      .search {
-        display: flex;
-        width: 70%;
-        justify-content: space-between;
-      }
-    
-      nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 70%;
-        margin-left: 60px;
-      }
-    
-      #backbutton {
-        display: none;
-      }
-    
-      .hamburger {
-        display: none;
-      }
-    
-      .logo {
-        display: flex;
-        width: 300px;
-        color: white;
-        margin: 30px 20px 0px;
-      }
-    
-      .nav-links {
-        justify-content: space-around;
-        list-style: none;
-        height: 30px;
-        align-items: center;
-        width: 900px;
-      }
-    
-      .nav-link {
-        display: flex;
-        color: #40baf9;
-        font-size: 20px;
-        text-decoration: none;
-        padding: 20px
-      }
-    
-      .nav-link:hover {
-        background-color: #40baf9;
-        color: var(--main-black);
-      }
-    
-      .image_container {
-          margin-top: -10;
-      }
-    
-      .front_img {
-        margin: auto;
-        width: 100%;
-      }
-    
-      .slogan_text {
-          position: relative;
-          bottom: -80px;
-        justify-content: center;
-        background: linear-gradient(to right, #254249, #40baf9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 40px;
-      }
-    
-      .cta, .cta-woman, .cta-man {
-        display: none
-      }
-    
-      .menResultsContainer, .womanResultsContainer {
-        display: flex;
-        flex-direction: row;
-        margin-top: 100px;
-        margin: auto;
-        justify-content:space-between;
-      }
-    
-      .product_name {
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-      }
-    
-      .product_price {
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-      }
-    
-      .product_button {
-        color: var(--main-black);
-        background-color: var(--main-blue);
-        max-width: 400px;
-        margin: auto;
-        border: 2px solid var(--main-black);
-        text-align: center;
-        font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-    
-      .product_info {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    
-      .product_card {
-        margin: auto;
-        margin-bottom: 20px;  
-        margin-top:40px;
-        border: 2px solid var(--main-black);
-        padding: 20px;
-        background-color: var(--main-grey);
-      }
-    
-    
-      .selectedProduct {
-        margin: auto;  
-        margin-top:40px;
-        border: 2px solid var(--main-black);
-        background-color: var(--main-grey);
-      }
-    
-      .productsBox2 {
-        height: 1600px;
-        margin: 0 auto;
-    }
+  
+  header {
+    display: flex;
+    height: 15vh;
+  }
 
-      .singleProductDetails {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-        padding-top: 48px;
-    }
-    
-      .singleProduct_card {
-        border-radius: 6px;
-        margin: 0 auto;
-        padding: 10px;
-        background-color: var(--main-grey);
-        box-shadow: 0 0 1px #000000, 0 0 1px #000000;
-        margin-top: 48px;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        margin: 0 auto;
-    }
+  /*-------------NAVIGATION/HAMBURGER-------------*/
 
-      .singleProduct_image {
-        display: block;
-        border-radius: 6px;
-    }
-    
-      .singleProduct_name {
-        text-align: center;
-        max-width: 300px;
-    }
-    
-      .singleProduct_price {
-        text-align: center;
-        max-width: 300px;
-        margin-top: 20px;
-    }
-    
-      .singleProduct_info {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  main {
+    margin: 20px;
+  }
 
-      .button_container {
-        margin: 0 auto;
-        text-align: center;
+  nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    border: 1px solid red;
+
+  }
+  
+  .nav-links li a {
+    display: flex;
+    border: 1px solid red;
+    color: red;
+  }
+  
+  .hamburger_menu.open,
+  .line,
+  .hamburger_menu,
+  .nav-links.open {
+    display: none;
+  }
+  
+  #backbutton {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    color: #40baf9;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px
+  }
+
+  .nav-link:hover {
+    background-color: #40baf9;
+    color: var(--main-black);
+  }
+
+  .image_container {
+      margin-top: -10;
+  }
+
+  .front_img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .slogan_text {
+    position: relative;
+    bottom: -80px;
+    justify-content: center;
+    background: linear-gradient(to right, #254249, #40baf9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
+
+  .logo {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .cta, .cta-woman, .cta-man {
+    display: none
+  }
+  .productsMenContainer,
+  .productsWomenContainer {
+    display: grid;
+    grid-template: 50% 50%;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .menResultsContainer, .womanResultsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin: auto;
+    justify-content:space-between;
+  }
+
+  .product_name {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .product_price {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .product_button {
+    color: var(--main-black);
+    background-color: var(--main-blue);
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid var(--main-black);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .product_info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product_card {
+    margin: auto;
+    margin-bottom: 20px;  
+    margin-top:40px;
+    border: 2px solid var(--main-black);
+    padding: 20px;
+    background-color: var(--main-grey);
+  }
+
+
+  .selectedProduct {
+    margin: auto;  
+    margin-top:40px;
+    border: 2px solid var(--main-black);
+    background-color: var(--main-grey);
+  }
+
+  .productsBox2 {
+    height: 1600px;
+    margin: 0 auto;
+  }
+  .singleProductDetails {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-top: 48px;
+  }
+  
+  .singleProduct_card {
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--main-grey);
+    box-shadow: 0 0 1px #000000, 0 0 1px #000000;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .singleProduct_image {
+    display: block;
+    border-radius: 6px;
+  }
+  
+  .singleProduct_name {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .singleProduct_price {
+    text-align: center;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  
+    .singleProduct_info {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .button_container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .singleProduct_button {
+    margin-top: 20px;
+    color: var(--main-black);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 81px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--main-blue);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+  }
+  
+    /* ------------ABOUT PAGE---------------------- */
+  
+  .aboutBox {
+    background: var(--main-grey);
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 6px;
+    height: 600px;
     }
-    
-      .singleProduct_button {
-        margin-top: 20px;
-        color: var(--main-black);
-        font-size: 20px;
-        font-weight: 600;
-        border-radius: 6px;
-        text-align: center;
-        padding-left: 75px;
-        padding-right: 81px;
-        list-style: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        background-color: var(--main-blue);
-        box-shadow: 0.5px 0.5px 0.5px 0.5px black;
-    }
-    
-      /* ------------ABOUT PAGE---------------------- */
-    
-      .aboutBox {
-        background: var(--main-grey);
-        width: 500px;
-        margin: 40px auto;
-        padding: 20px;
-        border-radius: 6px;
-        height: 600px;
-      }
-    }
+  }
